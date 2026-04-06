@@ -168,14 +168,14 @@ whois 1.2.3.4 | grep -i country
 ```
 ### 📊 Мониторинг
 #### Лог файлы
-
+```
 Файл	                        Описание
 /var/log/geoip-alerts.log	    Лог GeoIP алертов
 /var/log/banned_ips.txt	      Список заблокированных IP
 /var/log/auth.log	            Лог авторизации (Ubuntu)
 /var/log/secure	              Лог авторизации (CentOS)
 /var/log/fail2ban.log	        Лог Fail2Ban
-
+```
 #### Cron задачи
 ```bash
 # Просмотр cron задач
@@ -186,11 +186,12 @@ crontab -l
 ```
 
 #### Скрипты
+```
 Скрипт	                            Описание
 /usr/local/bin/geoip-monitor.sh	    Основной мониторинг в реальном времени
 /usr/local/bin/geoip-scan.sh	      Сканирование логов каждый час
 /usr/local/bin/geoip-stats.sh	      Статистика атак
-
+```
 ### 🔧 Устранение проблем
 #### Не удаётся подключиться по SSH
 ```bash
